@@ -1,0 +1,20 @@
+.body {
+    position: absolute;
+    margin-left: 232px;
+    &__header {
+        height: 241px;
+        background: #4285f4;
+        position: relative;
+        &__title {
+            position: absolute;
+            font-size: 56px;
+            color: #fff;
+            top: 120px;
+            left: 120px;
+        }
+    }
+    &__content {
+        font-size: 100px;
+        line-height: 300px;
+    }
+}
