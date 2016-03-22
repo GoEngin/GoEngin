@@ -1,9 +1,9 @@
 {
-  "name": "kdoc",
+  "name": "goengin",
   "version": "0.0.1",
-  "description": "Korea Developer Open Community",
+  "description": "Go Engineers!!",
   "repository": {
-    "url": "https://github.com/neochaex/kdoc.git"
+    "url": "https://github.com/GoEngin/GoEngin.git"
   },
   "scripts": {
     "build.dev": "gulp build.dev",

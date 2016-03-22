@@ -24,7 +24,7 @@ export const HOT_LOADER_PORT      = 5578;
 
 export const BOOTSTRAP_MODULE     = ENABLE_HOT_LOADING ? 'hot_loader_main' : 'main';
 
-export const APP_TITLE            = 'KDOC';
+export const APP_TITLE            = 'GoEngin';
 
 export const APP_SRC              = 'src';
 export const ASSETS_SRC           = `${APP_SRC}/styles`;
