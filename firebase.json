@@ -1,0 +1,9 @@
+{
+  "firebase": "geos",
+  "public": "dist/prod",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
