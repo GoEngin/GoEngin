@@ -1,7 +1,8 @@
-.body {
+:host {
     position: absolute;
     margin-left: 232px;
-    &__header {
+    transition: margin-left 0.15s;
+    .body__header {
         height: 241px;
         background: #4285f4;
         position: relative;
@@ -13,7 +14,7 @@
             left: 120px;
         }
     }
-    &__content {
+    .body__content {
         font-size: 100px;
         line-height: 300px;
     }

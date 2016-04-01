@@ -1,4 +1,5 @@
-.sidebar {
+:host {
+	display: block;
     position: fixed;
     left: 0;
     width: 232px;

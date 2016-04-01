@@ -1,3 +1,3 @@
-<ge-sidebar></ge-sidebar>
-<ge-header class="header--isbig"></ge-header>
-<ge-body></ge-body>
+<ge-sidebar class="sidebar"></ge-sidebar>
+<ge-header class="header" [class.header--isbig]="isBigHeader"></ge-header>
+<ge-body class="body" (hideHeader)="onBodyHeaderHide($event)"></ge-body>

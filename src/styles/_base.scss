@@ -30,18 +30,3 @@ html {
   display: table;
   clear: both;
 }
-
-// Page Sections and Grids
-//.l-xxxx, .header, .sidebar
-/* Breakpoints */
-/* Small */
-@media (max-width: 1280px) {
-    .sidebar {
-        left: -232px !important;
-    }
-    .body {
-        margin-left: 0 !important;
-    }
-}
-/* Desktop */
-@media (min-width: 1281px) {}

@@ -18,4 +18,10 @@ import {BodyComponent} from './container/main/body/body.component';
 //   { path: '/about', name: 'About', component: AboutComponent }
 ])
 
-export class AppComponent {}
+export class AppComponent {
+	isBigHeader = true;
+	header = HeaderComponent;
+	onBodyHeaderHide(e) {
+		this.isBigHeader = !e.isHide;
+	}
+}
