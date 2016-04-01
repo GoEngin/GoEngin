@@ -6,5 +6,10 @@
     height: 100%;
     transition: left 0.15s;
     z-index: 100;
-    background: gray;
+    background: white;
+    .sidebar__header {
+    	padding-top: 20px;
+	    text-align: center;
+	    font-size: 20px;
+    }
 }
