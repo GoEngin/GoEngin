@@ -1,0 +1,7 @@
+:host {
+	display: inline-block;
+	&.header__search {
+		position: absolute;
+        right: 16px;
+	}
+}

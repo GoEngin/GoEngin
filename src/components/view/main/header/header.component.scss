@@ -1,12 +1,5 @@
-
-@mixin placeholder {
-  &::-webkit-input-placeholder {@content}
-  &:-moz-placeholder           {@content}
-  &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}  
-}
-
-.header {
+:host {
+    display: block;
     position: fixed;
     width: 100%;
     height: 56px;
@@ -14,12 +7,6 @@
     z-index: 99;
     color: #f2f2f2;
     font-size: 16px;
-    input[type="text"] {
-        @include placeholder {
-            color: #f2f2f2;
-            font-weight: 100;
-        }
-    }
     &:before {
         box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
         content: "";
@@ -41,15 +28,6 @@
             font-weight: 400;
             white-space: nowrap;
         }
-        &__search {
-            position: absolute;
-            right: 16px;
-            .button__header__close {
-                position: absolute;
-                right: -10px;
-                top: 13px;
-            }
-        }
     }
     &.header--isbig {
         &:before {
@@ -62,3 +40,5 @@
         }
     }
 }
+
+

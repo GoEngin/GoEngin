@@ -1,0 +1,18 @@
+:host {
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 0;
+    background: transparent;
+    &.button__header {
+		color: #D0E0FC;
+		//TODO: ge-icon has more height that should be figured out. force assign a height as 56px => line-height
+		height: 56px;
+	}
+	&.button--right {
+		position: absolute;
+		top: 0;
+		right: -4px;
+	}
+}
