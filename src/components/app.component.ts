@@ -1,8 +1,8 @@
 import {Component, ViewEncapsulation} from 'angular2/core';
 import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
-import {SidebarComponent} from './view/main/sidebar/sidebar.component';
-import {HeaderComponent} from './view/main/header/header.component';
-import {BodyComponent} from './view/main/body/body.component';
+import {SidebarComponent} from './container/main/sidebar/sidebar.component';
+import {HeaderComponent} from './container/main/header/header.component';
+import {BodyComponent} from './container/main/body/body.component';
 
 @Component({
   selector: 'ge-app',
