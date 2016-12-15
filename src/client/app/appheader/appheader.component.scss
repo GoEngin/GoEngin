@@ -1,0 +1,16 @@
+:host {
+	display: block;
+	z-index: 2;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-left: 0;
+    transition: margin-left .3s ease;
+
+    mc-header {
+    	.header__base__title {
+    		padding: 12px 80px 0 45px;
+    	}
+    }
+}

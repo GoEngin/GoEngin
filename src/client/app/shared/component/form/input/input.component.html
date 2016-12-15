@@ -1,0 +1,11 @@
+<!-- TODO: label for='xxx' and input required has an error -->
+<label class="input__label"><mc-icon *ngIf="iconLabel" [icon]="iconLabel"></mc-icon>{{label}}</label>
+<div class="input__container">
+	<div class="input" [ngSwitch]="type">
+		<mc-text *ngIf="_getCmpName() === 'text'" name="{{name}}" type="{{type}}" value="{{value}}" (valueChange)="onValueChange($event)" (focus)="onFocus($event)" (blur)="onBlur($event)"></mc-text>
+		<mc-toggle *ngIf="_getCmpName() === 'toggle'" name="{{name}}" type="{{type}}" value="{{value}}" (valueChange)="onValueChange($event)" [listData]="listData"></mc-toggle>
+	</div>
+    <span class="input__placeholder">{{placeholder}}</span>
+    <span *ngIf="help" class="input__help"><mc-icon [icon]="iconHelp"></mc-icon></span>
+</div>
+<div class="input__error">{{errorMessage}}</div>

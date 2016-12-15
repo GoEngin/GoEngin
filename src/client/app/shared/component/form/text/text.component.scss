@@ -1,0 +1,53 @@
+:host {
+    display: block;
+    position: relative;
+	width: 100%;
+    height: 32px;
+    .text__left {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0,-50%);
+        padding: 0 10px;
+        z-index: 1;
+        mc-icon {
+            color: #D0E0FC;
+            font-size: 18px;
+            padding-top: 3px;
+        }
+    }
+    .text__center {
+        width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translate(0,-50%);
+        color: #fff;
+    	input {
+    		background-color: transparent;
+            width: 100%;
+            line-height: 24px;
+            font-size: 18px;
+            padding: 0 6px;
+            border:0;
+            &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+              color: #D0E0FC;
+              font-size: 16px;
+            }
+            &::-moz-placeholder { /* Firefox 19+ */
+              color: #D0E0FC;
+            }
+            &:-ms-input-placeholder { /* IE 10+ */
+              color: #D0E0FC;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+              color: #D0E0FC;
+            }
+    	}
+    }
+    
+    &.text__search {
+        background-color: rgba(255,255,255,.15);
+        border-radius: 4px;
+        padding: 0 30px;
+    }
+}

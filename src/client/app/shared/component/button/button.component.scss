@@ -1,0 +1,71 @@
+:host {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    white-space: nowrap;
+    border: 0;
+    background: transparent;
+    &.hasLabel {
+        border-radius: 3px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 8px;
+        line-height: 23px;
+        mc-icon {
+            position: absolute;
+            left: 8px;
+        }
+    }
+    &.hasImage {
+        img {
+            width: 24px;
+        }
+    }
+    &.disabled {
+        pointer-events: none;
+        cursor: auto;
+        opacity: .5;
+    }
+    &.hidden {
+        display: none;
+    }
+    &.button__header__category {
+        padding: 4px 15px 0 15px;
+    }
+    &.button__header__person {
+        padding-top: 2px;
+    }
+    &.button__header__gravatar {
+        padding-top: 2px; 
+    }
+    &.button__header__logo {
+    }
+    &.button__drawer__close {
+        position: absolute;
+        right: 0;
+        margin: 5px;
+        z-index: 1;
+    }
+    &.button__login {
+         width: 100%;
+         margin: 5px 0;
+        &__facebook, &__google {
+            background-color: #3b5998;
+            color: #fff;
+            padding-left: 48px;
+        }
+        &__google {
+            background-color: #4285f4;
+        }
+        &__login, &__sign-up, &__password-reset {
+            text-align: center;
+            background-color: #bd081c;
+            color: #fff;
+        }
+        &__forgot-password, &__sign-up-now {
+            width: auto;
+        }
+    }
+}

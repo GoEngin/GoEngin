@@ -1,0 +1,7 @@
+<table *ngIf="hasTable" class="listitem__table">
+	<tr class="listitem__tr">
+		<td *ngFor="let column of columns" width="{{column.flex * 100}}%" class="listitem__icontype__{{column.iconType}} listitem__align__{{column.align || 'left'}} {{column.cls ? 'listitem__column__' + column.cls : ''}}" ><mc-icon *ngIf="column.icon" [icon]="column.icon" [attr.data-icontype]="column.iconType"></mc-icon><span *ngIf="column.field" class="listitem__text" [class.listitem__value__box]="column.box" [class.listitem__value-minus]="item[column.field] < 0">{{item[column.field]}}</span><ng-content *ngIf="column.hasTpl" select=".listitem__column__tpl"></ng-content></td>
+	</tr>
+</table>
+<div *ngIf="hasDetail" class="listitem__detail" style="height:0px;" #detail><ng-content select=".listitem__detail__tpl"></ng-content></div>
+<ng-content></ng-content>

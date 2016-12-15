@@ -1,0 +1,629 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'ts-md5' ]
+2 info using npm@3.10.9
+3 info using node@v7.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData ts-md5
+8 silly fetchNamedPackageData ts-md5
+9 silly mapToRegistry name ts-md5
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'ts-md5',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'ts-md5',
+12 silly mapToRegistry   name: 'ts-md5',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/ts-md5
+14 verbose request uri https://registry.npmjs.org/ts-md5
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 6:00:07 PM
+17 verbose request id a838b33761825988
+18 http request GET https://registry.npmjs.org/ts-md5
+19 http 200 https://registry.npmjs.org/ts-md5
+20 verbose headers { server: 'nginx/1.10.1',
+20 verbose headers   'content-type': 'application/json',
+20 verbose headers   'last-modified': 'Wed, 16 Mar 2016 05:41:53 GMT',
+20 verbose headers   etag: 'W/"56e8f221-1e63"',
+20 verbose headers   'content-encoding': 'gzip',
+20 verbose headers   'cache-control': 'max-age=300',
+20 verbose headers   'content-length': '2437',
+20 verbose headers   'accept-ranges': 'bytes',
+20 verbose headers   date: 'Thu, 08 Dec 2016 02:00:07 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   age: '0',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-sjc3628-SJC',
+20 verbose headers   'x-cache': 'MISS',
+20 verbose headers   'x-cache-hits': '0',
+20 verbose headers   'x-timer': 'S1481162407.068048,VS0,VE219',
+20 verbose headers   vary: 'Accept-Encoding' }
+21 silly get cb [ 200,
+21 silly get   { server: 'nginx/1.10.1',
+21 silly get     'content-type': 'application/json',
+21 silly get     'last-modified': 'Wed, 16 Mar 2016 05:41:53 GMT',
+21 silly get     etag: 'W/"56e8f221-1e63"',
+21 silly get     'content-encoding': 'gzip',
+21 silly get     'cache-control': 'max-age=300',
+21 silly get     'content-length': '2437',
+21 silly get     'accept-ranges': 'bytes',
+21 silly get     date: 'Thu, 08 Dec 2016 02:00:07 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     age: '0',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-sjc3628-SJC',
+21 silly get     'x-cache': 'MISS',
+21 silly get     'x-cache-hits': '0',
+21 silly get     'x-timer': 'S1481162407.068048,VS0,VE219',
+21 silly get     vary: 'Accept-Encoding' } ]
+22 verbose get saving ts-md5 to /Users/neo/.npm/registry.npmjs.org/ts-md5/.cache.json
+23 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule ts-md5@1.2.0 checking installable status
+37 silly cache add args [ 'ts-md5', null ]
+38 verbose cache add spec ts-md5
+39 silly cache add parsed spec Result {
+39 silly cache add   raw: 'ts-md5',
+39 silly cache add   scope: null,
+39 silly cache add   escapedName: 'ts-md5',
+39 silly cache add   name: 'ts-md5',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: 'latest',
+39 silly cache add   type: 'tag' }
+40 silly addNamed ts-md5@latest
+41 verbose addNamed "latest" is being treated as a dist-tag for ts-md5
+42 info addNameTag [ 'ts-md5', 'latest' ]
+43 silly mapToRegistry name ts-md5
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry data Result {
+46 silly mapToRegistry   raw: 'ts-md5',
+46 silly mapToRegistry   scope: null,
+46 silly mapToRegistry   escapedName: 'ts-md5',
+46 silly mapToRegistry   name: 'ts-md5',
+46 silly mapToRegistry   rawSpec: '',
+46 silly mapToRegistry   spec: 'latest',
+46 silly mapToRegistry   type: 'tag' }
+47 silly mapToRegistry uri https://registry.npmjs.org/ts-md5
+48 verbose addNameTag registry:https://registry.npmjs.org/ts-md5 not in flight; fetching
+49 verbose get https://registry.npmjs.org/ts-md5 not expired, no request
+50 silly addNameTag next cb for ts-md5 with tag latest
+51 silly addNamed ts-md5@1.2.0
+52 verbose addNamed "1.2.0" is a plain semver version for ts-md5
+53 silly mapToRegistry name ts-md5
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'ts-md5',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   escapedName: 'ts-md5',
+56 silly mapToRegistry   name: 'ts-md5',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/ts-md5
+58 verbose addRemoteTarball https://registry.npmjs.org/ts-md5/-/ts-md5-1.2.0.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/ts-md5/-/ts-md5-1.2.0.tgz',
+59 verbose addRemoteTarball   'c30b385261bd27962f754509675f0e9578810569' ]
+60 info retry fetch attempt 1 at 6:00:09 PM
+61 info attempt registry request try #1 at 6:00:09 PM
+62 http fetch GET https://registry.npmjs.org/ts-md5/-/ts-md5-1.2.0.tgz
+63 http fetch 200 https://registry.npmjs.org/ts-md5/-/ts-md5-1.2.0.tgz
+64 silly fetchAndShaCheck shasum c30b385261bd27962f754509675f0e9578810569
+65 verbose addTmpTarball /var/folders/3h/f91z5ksj6rlf3mh9z5bft6_40000gn/T/npm-39050-9482640a/registry.npmjs.org/ts-md5/-/ts-md5-1.2.0.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for ts-md5@1.2.0
+67 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+68 silly cache afterAdd ts-md5@1.2.0
+69 verbose afterAdd /Users/neo/.npm/ts-md5/1.2.0/package/package.json not in flight; writing
+70 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+71 verbose afterAdd /Users/neo/.npm/ts-md5/1.2.0/package/package.json written
+72 silly fetchNamedPackageData @types/jasmine
+73 silly mapToRegistry name @types/jasmine
+74 silly mapToRegistry scope (from package name) @types
+75 verbose mapToRegistry no registry URL found in name for scope @types
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry data Result {
+78 silly mapToRegistry   raw: '@types/jasmine',
+78 silly mapToRegistry   scope: '@types',
+78 silly mapToRegistry   escapedName: '@types%2fjasmine',
+78 silly mapToRegistry   name: '@types/jasmine',
+78 silly mapToRegistry   rawSpec: '',
+78 silly mapToRegistry   spec: 'latest',
+78 silly mapToRegistry   type: 'tag' }
+79 silly mapToRegistry uri https://registry.npmjs.org/@types%2fjasmine
+80 silly fetchNamedPackageData @types/node
+81 silly mapToRegistry name @types/node
+82 silly mapToRegistry scope (from package name) @types
+83 verbose mapToRegistry no registry URL found in name for scope @types
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry data Result {
+86 silly mapToRegistry   raw: '@types/node',
+86 silly mapToRegistry   scope: '@types',
+86 silly mapToRegistry   escapedName: '@types%2fnode',
+86 silly mapToRegistry   name: '@types/node',
+86 silly mapToRegistry   rawSpec: '',
+86 silly mapToRegistry   spec: 'latest',
+86 silly mapToRegistry   type: 'tag' }
+87 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+88 silly fetchNamedPackageData @types/q
+89 silly mapToRegistry name @types/q
+90 silly mapToRegistry scope (from package name) @types
+91 verbose mapToRegistry no registry URL found in name for scope @types
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry data Result {
+94 silly mapToRegistry   raw: '@types/q',
+94 silly mapToRegistry   scope: '@types',
+94 silly mapToRegistry   escapedName: '@types%2fq',
+94 silly mapToRegistry   name: '@types/q',
+94 silly mapToRegistry   rawSpec: '',
+94 silly mapToRegistry   spec: 'latest',
+94 silly mapToRegistry   type: 'tag' }
+95 silly mapToRegistry uri https://registry.npmjs.org/@types%2fq
+96 silly fetchNamedPackageData @types/selenium-webdriver
+97 silly mapToRegistry name @types/selenium-webdriver
+98 silly mapToRegistry scope (from package name) @types
+99 verbose mapToRegistry no registry URL found in name for scope @types
+100 silly mapToRegistry using default registry
+101 silly mapToRegistry registry https://registry.npmjs.org/
+102 silly mapToRegistry data Result {
+102 silly mapToRegistry   raw: '@types/selenium-webdriver',
+102 silly mapToRegistry   scope: '@types',
+102 silly mapToRegistry   escapedName: '@types%2fselenium-webdriver',
+102 silly mapToRegistry   name: '@types/selenium-webdriver',
+102 silly mapToRegistry   rawSpec: '',
+102 silly mapToRegistry   spec: 'latest',
+102 silly mapToRegistry   type: 'tag' }
+103 silly mapToRegistry uri https://registry.npmjs.org/@types%2fselenium-webdriver
+104 verbose request uri https://registry.npmjs.org/@types%2fnode
+105 verbose request no auth needed
+106 info attempt registry request try #1 at 6:00:12 PM
+107 verbose etag "583df8b5-8baf"
+108 http request GET https://registry.npmjs.org/@types%2fnode
+109 verbose request uri https://registry.npmjs.org/@types%2fjasmine
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 6:00:12 PM
+112 verbose etag "582a122d-5534"
+113 http request GET https://registry.npmjs.org/@types%2fjasmine
+114 verbose request uri https://registry.npmjs.org/@types%2fq
+115 verbose request no auth needed
+116 info attempt registry request try #1 at 6:00:12 PM
+117 verbose etag "57f56a13-3d3c"
+118 http request GET https://registry.npmjs.org/@types%2fq
+119 verbose request uri https://registry.npmjs.org/@types%2fselenium-webdriver
+120 verbose request no auth needed
+121 info attempt registry request try #1 at 6:00:12 PM
+122 verbose etag "5820cc0a-57a3"
+123 http request GET https://registry.npmjs.org/@types%2fselenium-webdriver
+124 http 200 https://registry.npmjs.org/@types%2fnode
+125 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+125 verbose headers   'content-type': 'application/json',
+125 verbose headers   etag: '"58449d59-8f9c"',
+125 verbose headers   'content-encoding': 'gzip',
+125 verbose headers   'cache-control': 'max-age=0',
+125 verbose headers   'transfer-encoding': 'chunked',
+125 verbose headers   'accept-ranges': 'bytes',
+125 verbose headers   date: 'Thu, 08 Dec 2016 02:00:12 GMT',
+125 verbose headers   via: '1.1 varnish',
+125 verbose headers   connection: 'keep-alive',
+125 verbose headers   'x-served-by': 'cache-sjc3628-SJC',
+125 verbose headers   'x-cache': 'MISS',
+125 verbose headers   'x-cache-hits': '0',
+125 verbose headers   'x-timer': 'S1481162412.366268,VS0,VE148',
+125 verbose headers   vary: 'Accept-Encoding' }
+126 silly get cb [ 200,
+126 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+126 silly get     'content-type': 'application/json',
+126 silly get     etag: '"58449d59-8f9c"',
+126 silly get     'content-encoding': 'gzip',
+126 silly get     'cache-control': 'max-age=0',
+126 silly get     'transfer-encoding': 'chunked',
+126 silly get     'accept-ranges': 'bytes',
+126 silly get     date: 'Thu, 08 Dec 2016 02:00:12 GMT',
+126 silly get     via: '1.1 varnish',
+126 silly get     connection: 'keep-alive',
+126 silly get     'x-served-by': 'cache-sjc3628-SJC',
+126 silly get     'x-cache': 'MISS',
+126 silly get     'x-cache-hits': '0',
+126 silly get     'x-timer': 'S1481162412.366268,VS0,VE148',
+126 silly get     vary: 'Accept-Encoding' } ]
+127 verbose get saving @types/node to /Users/neo/.npm/registry.npmjs.org/_40types_252fnode/.cache.json
+128 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+129 silly resolveWithNewModule @types/node@6.0.51 checking installable status
+130 silly cache add args [ '@types/node@^6.0.46', null ]
+131 verbose cache add spec @types/node@^6.0.46
+132 silly cache add parsed spec Result {
+132 silly cache add   raw: '@types/node@^6.0.46',
+132 silly cache add   scope: '@types',
+132 silly cache add   escapedName: '@types%2fnode',
+132 silly cache add   name: '@types/node',
+132 silly cache add   rawSpec: '^6.0.46',
+132 silly cache add   spec: '>=6.0.46 <7.0.0',
+132 silly cache add   type: 'range' }
+133 silly addNamed @types/node@>=6.0.46 <7.0.0
+134 verbose addNamed ">=6.0.46 <7.0.0" is a valid semver range for @types/node
+135 silly addNameRange { name: '@types/node', range: '>=6.0.46 <7.0.0', hasData: false }
+136 silly mapToRegistry name @types/node
+137 silly mapToRegistry scope (from package name) @types
+138 verbose mapToRegistry no registry URL found in name for scope @types
+139 silly mapToRegistry using default registry
+140 silly mapToRegistry registry https://registry.npmjs.org/
+141 silly mapToRegistry data Result {
+141 silly mapToRegistry   raw: '@types/node',
+141 silly mapToRegistry   scope: '@types',
+141 silly mapToRegistry   escapedName: '@types%2fnode',
+141 silly mapToRegistry   name: '@types/node',
+141 silly mapToRegistry   rawSpec: '',
+141 silly mapToRegistry   spec: 'latest',
+141 silly mapToRegistry   type: 'tag' }
+142 silly mapToRegistry uri https://registry.npmjs.org/@types%2fnode
+143 verbose addNameRange registry:https://registry.npmjs.org/@types%2fnode not in flight; fetching
+144 verbose get https://registry.npmjs.org/@types%2fnode not expired, no request
+145 silly addNameRange number 2 { name: '@types/node', range: '>=6.0.46 <7.0.0', hasData: true }
+146 silly addNameRange versions [ '@types/node',
+146 silly addNameRange   [ '4.0.15-alpha',
+146 silly addNameRange     '4.0.16-alpha',
+146 silly addNameRange     '4.0.21-alpha',
+146 silly addNameRange     '4.0.22-alpha',
+146 silly addNameRange     '4.0.23-alpha',
+146 silly addNameRange     '4.0.24-alpha',
+146 silly addNameRange     '4.0.25-alpha',
+146 silly addNameRange     '4.0.26-alpha',
+146 silly addNameRange     '4.0.27-alpha',
+146 silly addNameRange     '4.0.28-alpha',
+146 silly addNameRange     '4.0.29',
+146 silly addNameRange     '4.0.30',
+146 silly addNameRange     '6.0.31',
+146 silly addNameRange     '6.0.32',
+146 silly addNameRange     '6.0.33',
+146 silly addNameRange     '6.0.34',
+146 silly addNameRange     '6.0.35',
+146 silly addNameRange     '6.0.36',
+146 silly addNameRange     '6.0.37',
+146 silly addNameRange     '6.0.38',
+146 silly addNameRange     '6.0.39',
+146 silly addNameRange     '6.0.40',
+146 silly addNameRange     '6.0.41',
+146 silly addNameRange     '6.0.42',
+146 silly addNameRange     '6.0.43',
+146 silly addNameRange     '6.0.44',
+146 silly addNameRange     '6.0.45',
+146 silly addNameRange     '6.0.46',
+146 silly addNameRange     '6.0.47',
+146 silly addNameRange     '6.0.48',
+146 silly addNameRange     '6.0.49',
+146 silly addNameRange     '6.0.50',
+146 silly addNameRange     '6.0.51',
+146 silly addNameRange     '0.0.0',
+146 silly addNameRange     '0.0.1',
+146 silly addNameRange     '0.0.2' ] ]
+147 silly addNamed @types/node@6.0.51
+148 verbose addNamed "6.0.51" is a plain semver version for @types/node
+149 http 200 https://registry.npmjs.org/@types%2fselenium-webdriver
+150 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+150 verbose headers   'content-type': 'application/json',
+150 verbose headers   etag: '"583f675d-5bd7"',
+150 verbose headers   'content-encoding': 'gzip',
+150 verbose headers   'cache-control': 'max-age=0',
+150 verbose headers   'transfer-encoding': 'chunked',
+150 verbose headers   'accept-ranges': 'bytes',
+150 verbose headers   date: 'Thu, 08 Dec 2016 02:00:12 GMT',
+150 verbose headers   via: '1.1 varnish',
+150 verbose headers   age: '0',
+150 verbose headers   connection: 'keep-alive',
+150 verbose headers   'x-served-by': 'cache-sjc3633-SJC',
+150 verbose headers   'x-cache': 'MISS',
+150 verbose headers   'x-cache-hits': '0',
+150 verbose headers   'x-timer': 'S1481162412.400293,VS0,VE140',
+150 verbose headers   vary: 'Accept-Encoding' }
+151 silly get cb [ 200,
+151 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+151 silly get     'content-type': 'application/json',
+151 silly get     etag: '"583f675d-5bd7"',
+151 silly get     'content-encoding': 'gzip',
+151 silly get     'cache-control': 'max-age=0',
+151 silly get     'transfer-encoding': 'chunked',
+151 silly get     'accept-ranges': 'bytes',
+151 silly get     date: 'Thu, 08 Dec 2016 02:00:12 GMT',
+151 silly get     via: '1.1 varnish',
+151 silly get     age: '0',
+151 silly get     connection: 'keep-alive',
+151 silly get     'x-served-by': 'cache-sjc3633-SJC',
+151 silly get     'x-cache': 'MISS',
+151 silly get     'x-cache-hits': '0',
+151 silly get     'x-timer': 'S1481162412.400293,VS0,VE140',
+151 silly get     vary: 'Accept-Encoding' } ]
+152 verbose get saving @types/selenium-webdriver to /Users/neo/.npm/registry.npmjs.org/_40types_252fselenium-webdriver/.cache.json
+153 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+154 silly resolveWithNewModule @types/selenium-webdriver@2.53.36 checking installable status
+155 silly cache add args [ '@types/selenium-webdriver@~2.53.31', null ]
+156 verbose cache add spec @types/selenium-webdriver@~2.53.31
+157 silly cache add parsed spec Result {
+157 silly cache add   raw: '@types/selenium-webdriver@~2.53.31',
+157 silly cache add   scope: '@types',
+157 silly cache add   escapedName: '@types%2fselenium-webdriver',
+157 silly cache add   name: '@types/selenium-webdriver',
+157 silly cache add   rawSpec: '~2.53.31',
+157 silly cache add   spec: '>=2.53.31 <2.54.0',
+157 silly cache add   type: 'range' }
+158 silly addNamed @types/selenium-webdriver@>=2.53.31 <2.54.0
+159 verbose addNamed ">=2.53.31 <2.54.0" is a valid semver range for @types/selenium-webdriver
+160 silly addNameRange { name: '@types/selenium-webdriver',
+160 silly addNameRange   range: '>=2.53.31 <2.54.0',
+160 silly addNameRange   hasData: false }
+161 silly mapToRegistry name @types/selenium-webdriver
+162 silly mapToRegistry scope (from package name) @types
+163 verbose mapToRegistry no registry URL found in name for scope @types
+164 silly mapToRegistry using default registry
+165 silly mapToRegistry registry https://registry.npmjs.org/
+166 silly mapToRegistry data Result {
+166 silly mapToRegistry   raw: '@types/selenium-webdriver',
+166 silly mapToRegistry   scope: '@types',
+166 silly mapToRegistry   escapedName: '@types%2fselenium-webdriver',
+166 silly mapToRegistry   name: '@types/selenium-webdriver',
+166 silly mapToRegistry   rawSpec: '',
+166 silly mapToRegistry   spec: 'latest',
+166 silly mapToRegistry   type: 'tag' }
+167 silly mapToRegistry uri https://registry.npmjs.org/@types%2fselenium-webdriver
+168 verbose addNameRange registry:https://registry.npmjs.org/@types%2fselenium-webdriver not in flight; fetching
+169 verbose get https://registry.npmjs.org/@types%2fselenium-webdriver not expired, no request
+170 silly addNameRange number 2 { name: '@types/selenium-webdriver',
+170 silly addNameRange   range: '>=2.53.31 <2.54.0',
+170 silly addNameRange   hasData: true }
+171 silly addNameRange versions [ '@types/selenium-webdriver',
+171 silly addNameRange   [ '2.44.13-alpha',
+171 silly addNameRange     '2.44.14-alpha',
+171 silly addNameRange     '2.44.19-alpha',
+171 silly addNameRange     '2.44.20-alpha',
+171 silly addNameRange     '2.44.21-alpha',
+171 silly addNameRange     '2.44.22-alpha',
+171 silly addNameRange     '2.44.23-alpha',
+171 silly addNameRange     '2.44.24-alpha',
+171 silly addNameRange     '2.44.25-alpha',
+171 silly addNameRange     '2.44.26',
+171 silly addNameRange     '2.44.27',
+171 silly addNameRange     '2.44.28',
+171 silly addNameRange     '2.44.29',
+171 silly addNameRange     '2.53.30',
+171 silly addNameRange     '2.53.31',
+171 silly addNameRange     '2.53.32',
+171 silly addNameRange     '2.53.33',
+171 silly addNameRange     '2.53.34',
+171 silly addNameRange     '2.53.35',
+171 silly addNameRange     '2.53.36' ] ]
+172 silly addNamed @types/selenium-webdriver@2.53.36
+173 verbose addNamed "2.53.36" is a plain semver version for @types/selenium-webdriver
+174 silly mapToRegistry name @types/selenium-webdriver
+175 silly mapToRegistry scope (from package name) @types
+176 verbose mapToRegistry no registry URL found in name for scope @types
+177 silly mapToRegistry using default registry
+178 silly mapToRegistry registry https://registry.npmjs.org/
+179 silly mapToRegistry data Result {
+179 silly mapToRegistry   raw: '@types/selenium-webdriver',
+179 silly mapToRegistry   scope: '@types',
+179 silly mapToRegistry   escapedName: '@types%2fselenium-webdriver',
+179 silly mapToRegistry   name: '@types/selenium-webdriver',
+179 silly mapToRegistry   rawSpec: '',
+179 silly mapToRegistry   spec: 'latest',
+179 silly mapToRegistry   type: 'tag' }
+180 silly mapToRegistry uri https://registry.npmjs.org/@types%2fselenium-webdriver
+181 verbose addRemoteTarball https://registry.npmjs.org/@types/selenium-webdriver/-/selenium-webdriver-2.53.36.tgz not in flight; adding
+182 verbose addRemoteTarball [ 'https://registry.npmjs.org/@types/selenium-webdriver/-/selenium-webdriver-2.53.36.tgz',
+182 verbose addRemoteTarball   'a2d27d0709b368ae0894fc30c0e40af827d6e851' ]
+183 info retry fetch attempt 1 at 6:00:12 PM
+184 info attempt registry request try #1 at 6:00:12 PM
+185 http fetch GET https://registry.npmjs.org/@types/selenium-webdriver/-/selenium-webdriver-2.53.36.tgz
+186 http 304 https://registry.npmjs.org/@types%2fq
+187 verbose headers { date: 'Thu, 08 Dec 2016 02:00:12 GMT',
+187 verbose headers   via: '1.1 varnish',
+187 verbose headers   'cache-control': 'max-age=0',
+187 verbose headers   etag: '"57f56a13-3d3c"',
+187 verbose headers   age: '0',
+187 verbose headers   connection: 'keep-alive',
+187 verbose headers   'x-served-by': 'cache-sjc3630-SJC',
+187 verbose headers   'x-cache': 'MISS',
+187 verbose headers   'x-cache-hits': '0',
+187 verbose headers   'x-timer': 'S1481162412.417564,VS0,VE132',
+187 verbose headers   vary: 'Accept-Encoding' }
+188 silly get cb [ 304,
+188 silly get   { date: 'Thu, 08 Dec 2016 02:00:12 GMT',
+188 silly get     via: '1.1 varnish',
+188 silly get     'cache-control': 'max-age=0',
+188 silly get     etag: '"57f56a13-3d3c"',
+188 silly get     age: '0',
+188 silly get     connection: 'keep-alive',
+188 silly get     'x-served-by': 'cache-sjc3630-SJC',
+188 silly get     'x-cache': 'MISS',
+188 silly get     'x-cache-hits': '0',
+188 silly get     'x-timer': 'S1481162412.417564,VS0,VE132',
+188 silly get     vary: 'Accept-Encoding' } ]
+189 verbose etag https://registry.npmjs.org/@types%2fq from cache
+190 verbose get saving @types/q to /Users/neo/.npm/registry.npmjs.org/_40types_252fq/.cache.json
+191 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+192 http 304 https://registry.npmjs.org/@types%2fjasmine
+193 verbose headers { date: 'Thu, 08 Dec 2016 02:00:12 GMT',
+193 verbose headers   via: '1.1 varnish',
+193 verbose headers   'cache-control': 'max-age=0',
+193 verbose headers   etag: '"582a122d-5534"',
+193 verbose headers   age: '0',
+193 verbose headers   connection: 'keep-alive',
+193 verbose headers   'x-served-by': 'cache-sjc3144-SJC',
+193 verbose headers   'x-cache': 'MISS',
+193 verbose headers   'x-cache-hits': '0',
+193 verbose headers   'x-timer': 'S1481162412.417784,VS0,VE134',
+193 verbose headers   vary: 'Accept-Encoding' }
+194 silly get cb [ 304,
+194 silly get   { date: 'Thu, 08 Dec 2016 02:00:12 GMT',
+194 silly get     via: '1.1 varnish',
+194 silly get     'cache-control': 'max-age=0',
+194 silly get     etag: '"582a122d-5534"',
+194 silly get     age: '0',
+194 silly get     connection: 'keep-alive',
+194 silly get     'x-served-by': 'cache-sjc3144-SJC',
+194 silly get     'x-cache': 'MISS',
+194 silly get     'x-cache-hits': '0',
+194 silly get     'x-timer': 'S1481162412.417784,VS0,VE134',
+194 silly get     vary: 'Accept-Encoding' } ]
+195 verbose etag https://registry.npmjs.org/@types%2fjasmine from cache
+196 verbose get saving @types/jasmine to /Users/neo/.npm/registry.npmjs.org/_40types_252fjasmine/.cache.json
+197 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+198 silly resolveWithNewModule @types/q@0.0.32 checking installable status
+199 silly cache add args [ '@types/q@^0.0.32', null ]
+200 verbose cache add spec @types/q@^0.0.32
+201 silly cache add parsed spec Result {
+201 silly cache add   raw: '@types/q@^0.0.32',
+201 silly cache add   scope: '@types',
+201 silly cache add   escapedName: '@types%2fq',
+201 silly cache add   name: '@types/q',
+201 silly cache add   rawSpec: '^0.0.32',
+201 silly cache add   spec: '>=0.0.32 <0.0.33',
+201 silly cache add   type: 'range' }
+202 silly addNamed @types/q@>=0.0.32 <0.0.33
+203 verbose addNamed ">=0.0.32 <0.0.33" is a valid semver range for @types/q
+204 silly addNameRange { name: '@types/q', range: '>=0.0.32 <0.0.33', hasData: false }
+205 silly mapToRegistry name @types/q
+206 silly mapToRegistry scope (from package name) @types
+207 verbose mapToRegistry no registry URL found in name for scope @types
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry data Result {
+210 silly mapToRegistry   raw: '@types/q',
+210 silly mapToRegistry   scope: '@types',
+210 silly mapToRegistry   escapedName: '@types%2fq',
+210 silly mapToRegistry   name: '@types/q',
+210 silly mapToRegistry   rawSpec: '',
+210 silly mapToRegistry   spec: 'latest',
+210 silly mapToRegistry   type: 'tag' }
+211 silly mapToRegistry uri https://registry.npmjs.org/@types%2fq
+212 verbose addNameRange registry:https://registry.npmjs.org/@types%2fq not in flight; fetching
+213 verbose get https://registry.npmjs.org/@types%2fq not expired, no request
+214 silly addNameRange number 2 { name: '@types/q', range: '>=0.0.32 <0.0.33', hasData: true }
+215 silly addNameRange versions [ '@types/q',
+215 silly addNameRange   [ '0.0.14-alpha',
+215 silly addNameRange     '0.0.15-alpha',
+215 silly addNameRange     '0.0.20-alpha',
+215 silly addNameRange     '0.0.21-alpha',
+215 silly addNameRange     '0.0.22-alpha',
+215 silly addNameRange     '0.0.23-alpha',
+215 silly addNameRange     '0.0.24-alpha',
+215 silly addNameRange     '0.0.25-alpha',
+215 silly addNameRange     '0.0.26-alpha',
+215 silly addNameRange     '0.0.27',
+215 silly addNameRange     '0.0.28',
+215 silly addNameRange     '0.0.29',
+215 silly addNameRange     '0.0.30',
+215 silly addNameRange     '0.0.31',
+215 silly addNameRange     '0.0.32' ] ]
+216 silly addNamed @types/q@0.0.32
+217 verbose addNamed "0.0.32" is a plain semver version for @types/q
+218 silly resolveWithNewModule @types/jasmine@2.5.38 checking installable status
+219 silly cache add args [ '@types/jasmine@^2.5.36', null ]
+220 verbose cache add spec @types/jasmine@^2.5.36
+221 silly cache add parsed spec Result {
+221 silly cache add   raw: '@types/jasmine@^2.5.36',
+221 silly cache add   scope: '@types',
+221 silly cache add   escapedName: '@types%2fjasmine',
+221 silly cache add   name: '@types/jasmine',
+221 silly cache add   rawSpec: '^2.5.36',
+221 silly cache add   spec: '>=2.5.36 <3.0.0',
+221 silly cache add   type: 'range' }
+222 silly addNamed @types/jasmine@>=2.5.36 <3.0.0
+223 verbose addNamed ">=2.5.36 <3.0.0" is a valid semver range for @types/jasmine
+224 silly addNameRange { name: '@types/jasmine',
+224 silly addNameRange   range: '>=2.5.36 <3.0.0',
+224 silly addNameRange   hasData: false }
+225 silly mapToRegistry name @types/jasmine
+226 silly mapToRegistry scope (from package name) @types
+227 verbose mapToRegistry no registry URL found in name for scope @types
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry data Result {
+230 silly mapToRegistry   raw: '@types/jasmine',
+230 silly mapToRegistry   scope: '@types',
+230 silly mapToRegistry   escapedName: '@types%2fjasmine',
+230 silly mapToRegistry   name: '@types/jasmine',
+230 silly mapToRegistry   rawSpec: '',
+230 silly mapToRegistry   spec: 'latest',
+230 silly mapToRegistry   type: 'tag' }
+231 silly mapToRegistry uri https://registry.npmjs.org/@types%2fjasmine
+232 verbose addNameRange registry:https://registry.npmjs.org/@types%2fjasmine not in flight; fetching
+233 verbose get https://registry.npmjs.org/@types%2fjasmine not expired, no request
+234 silly addNameRange number 2 { name: '@types/jasmine',
+234 silly addNameRange   range: '>=2.5.36 <3.0.0',
+234 silly addNameRange   hasData: true }
+235 silly addNameRange versions [ '@types/jasmine',
+235 silly addNameRange   [ '2.2.15-alpha',
+235 silly addNameRange     '2.2.16-alpha',
+235 silly addNameRange     '2.2.21-alpha',
+235 silly addNameRange     '2.2.22-alpha',
+235 silly addNameRange     '2.2.23-alpha',
+235 silly addNameRange     '2.2.24-alpha',
+235 silly addNameRange     '2.2.25-alpha',
+235 silly addNameRange     '2.2.26-alpha',
+235 silly addNameRange     '2.2.27-alpha',
+235 silly addNameRange     '2.2.28-alpha',
+235 silly addNameRange     '2.2.29',
+235 silly addNameRange     '2.2.30',
+235 silly addNameRange     '2.2.31',
+235 silly addNameRange     '2.2.32',
+235 silly addNameRange     '2.2.33',
+235 silly addNameRange     '2.2.34',
+235 silly addNameRange     '2.5.35',
+235 silly addNameRange     '2.5.36',
+235 silly addNameRange     '2.5.37',
+235 silly addNameRange     '2.5.38' ] ]
+236 silly addNamed @types/jasmine@2.5.38
+237 verbose addNamed "2.5.38" is a plain semver version for @types/jasmine
+238 http fetch 200 https://registry.npmjs.org/@types/selenium-webdriver/-/selenium-webdriver-2.53.36.tgz
+239 silly fetchAndShaCheck shasum a2d27d0709b368ae0894fc30c0e40af827d6e851
+240 verbose addTmpTarball /var/folders/3h/f91z5ksj6rlf3mh9z5bft6_40000gn/T/npm-39050-9482640a/registry.npmjs.org/_40types/selenium-webdriver/-/selenium-webdriver-2.53.36.tgz not in flight; adding
+241 verbose addTmpTarball already have metadata; skipping unpack for @types/selenium-webdriver@2.53.36
+242 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+243 silly cache afterAdd @types/selenium-webdriver@2.53.36
+244 verbose afterAdd /Users/neo/.npm/@types/selenium-webdriver/2.53.36/package/package.json not in flight; writing
+245 verbose correctMkdir /Users/neo/.npm correctMkdir not in flight; initializing
+246 verbose afterAdd /Users/neo/.npm/@types/selenium-webdriver/2.53.36/package/package.json written
+247 silly rollbackFailedOptional Starting
+248 silly rollbackFailedOptional Finishing
+249 silly runTopLevelLifecycles Finishing
+250 silly install printInstalled
+251 verbose stack Error: Invalid name: "@types/node"
+251 verbose stack     at ensureValidName (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:300:15)
+251 verbose stack     at Object.fixNameField (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:204:5)
+251 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
+251 verbose stack     at Array.forEach (native)
+251 verbose stack     at normalize (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
+251 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:349:5)
+251 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:124:5)
+251 verbose stack     at ReadFileContext.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:295:20)
+251 verbose stack     at ReadFileContext.callback (/usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:78:16)
+251 verbose stack     at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:335:13)
+252 verbose cwd /Volumes/doc/projects/inqna
+253 error Darwin 16.1.0
+254 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "ts-md5"
+255 error node v7.2.0
+256 error npm  v3.10.9
+257 error Invalid name: "@types/node"
+258 error If you need help, you may report this error at:
+258 error     <https://github.com/npm/npm/issues>
+259 verbose exit [ 1, true ]

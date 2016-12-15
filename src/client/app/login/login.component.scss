@@ -1,0 +1,30 @@
+:host {
+    display: block;
+    position: relative;
+    padding: 0 40px 20px 40px;
+    .login__form__separator {
+    	margin: 10px 0;
+        text-align: center;
+        &:before, &:after {
+            background: rgba(0,0,0,0.2);
+            box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+            content: '';
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 100px;
+        }
+        &:before {
+            margin-right: 10px;
+        }
+        &:after {
+            margin-left: 10px;
+        }
+    }
+    &.mode__signup {
+        .login__form__line {
+            display: none;
+        }
+    }
+}

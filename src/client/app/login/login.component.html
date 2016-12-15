@@ -1,0 +1,19 @@
+<mc-header class="header__login">
+	{{mode.title}}
+</mc-header>
+<mc-form (valueChange)="onValueChange($event)" #frmLogin>
+	<mc-button class="button__login button__login__facebook" icon="facebook" label="Log in with Facebook" [hidden]="mode.type === 'login' ? false : true"></mc-button>
+	<mc-button class="button__login button__login__google" icon="google" label="Log in with Google" [hidden]="mode.type === 'login' ? false : true"></mc-button>
+	<p class="login__form__separator" [style.display] = "mode.type === 'login' ? '' : 'none'">or</p>
+	<mc-input type="text" name="userName" placeholder="Username" class="input__login input__login__username" [validators]="validator.userName" [hiddenAndDisabled]="mode.type === 'login' || mode.type === 'passwordReset' ? true : false"></mc-input>
+	<mc-input type="email" name="email" placeholder="Email" class="input__login input__login__email" [validators]="validator.email"></mc-input>
+	<mc-input type="password" name="password" placeholder="Password" class="input__login input__login__password" [validators]="validator.password" [hiddenAndDisabled]="mode.type === 'passwordReset' ? true : false"></mc-input>
+	<mc-input type="password" name="confirmPassword" placeholder="Confirm Password" class="input__login input__login__confirm-password" [validators]="validator.confirmPassword" [hiddenAndDisabled]="mode.type === 'login' || mode.type === 'passwordReset' ? true : false"></mc-input>
+	<mc-input type="boolean" name="rememberMe" label="Remember Me" labelLocation="right" class="input__login input__login__remeber-me" [hiddenAndDisabled]="mode.type === 'login' ? false : true"></mc-input>
+	<mc-button class="button__login button__login__login" label="LOGIN" [hidden]="mode.type === 'login' ? false : true"></mc-button>
+	<mc-button class="button__login button__login__sign-up" label="SIGN UP" [hidden]="mode.type === 'login' || mode.type === 'passwordReset' ? true : false"></mc-button>
+	<mc-button class="button__login button__login__password-reset" label="SEND RESET EMAIL" [hidden]="mode.type === 'passwordReset' ? false : true"></mc-button>
+	<mc-button class="button__login button__login__forgot-password" label="Forgot Password?" [hidden]="mode.type === 'login' ? false : true"></mc-button>
+	<mc-button class="button__login button__login__sign-up-now" label="Sign up now &gt;&gt;" [hidden]="mode.type === 'login' ? false : true"></mc-button>
+	<mc-button class="button__login button__login__go-login" label="&lt;&lt; Log in" [hidden]="mode.type === 'login' ? true : false"></mc-button>
+</mc-form>

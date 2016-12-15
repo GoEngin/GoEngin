@@ -1,0 +1,9 @@
+<ng-content select=".list__header__tpl"></ng-content>
+<div *ngIf="itemsHeader" class="list__items__header">
+	<table class="list__items__header__table">
+		<tr>
+			<td *ngFor="let column of columns" width="{{column.flex * 100}}%" class="listitem__align__{{column.align}}">{{column.displayName}}</td>
+		</tr>
+	</table>
+</div>
+<ng-content></ng-content>

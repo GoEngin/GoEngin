@@ -1,0 +1,48 @@
+:host {
+    position: relative;
+    display: block;
+    .card__container {
+        position: relative;
+        .card__header {
+            position: relative;
+            .card__header__tpl {
+                .card__title__previous {
+                    font-size: 14px;
+                    color: #539dd2;
+                    position: absolute;
+                    display: inline-block;
+                    padding-left: 20px;
+                }
+                .card__title__current {
+                    text-align: center;
+                    display: inline-block;
+                    width: 100%;
+                }
+            }
+        }
+        .card__body {
+            position: relative;
+            overflow: hidden;
+            transition: height 0.3s ease;
+        }
+    }
+    &.collapsed {
+        .card__body {
+        }
+    }
+    &.card__main {
+        .card__body {
+            padding: 0 13px;
+        }
+    }
+    &.card__content {
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+        border-radius: 3px;
+        overflow: hidden;
+        margin: 15px 0;
+        .card__body {
+            padding: 0;
+        }
+    }
+}

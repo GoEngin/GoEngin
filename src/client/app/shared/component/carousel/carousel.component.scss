@@ -1,0 +1,11 @@
+:host {
+	display: block;
+	position: relative;
+	.carousel__children__container {
+		position: relative;
+		overflow: hidden;
+		.carousel__children {
+			transition: transform 0.3s;
+		}
+	}
+}

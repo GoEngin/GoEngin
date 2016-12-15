@@ -1,0 +1,163 @@
+:host {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+
+    .drawer__mask {
+        display: block;
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity ease-in-out 0.3s, visibility ease-in-out 0.3s;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .drawer__container {
+        position: absolute;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+        background-color: white;
+        transition: transform 0.3s;
+        .drawer__content {
+            position: relative;
+            width: 100%;
+        }
+    }
+    &.is-bottom {
+        .drawer__container {
+            bottom: 0;
+            min-height: 100px;
+            min-width: 100%;
+            //depends on the height of container
+            transform: translateY(100px);
+        }
+    }
+    &.is-top {
+        .drawer__container {
+            top: 0;
+            height: 100px;
+            min-width: 100%;
+            transform: translateY(-100px);
+        }
+    }
+    &.is-left {
+        .drawer__container {
+            left: 0;
+            min-height: 100%;
+            width: 100px;
+            transform: translateX(-100px);
+        }
+    }
+    &.is-right {
+        .drawer__container {
+            right: 0;
+            min-height: 100%;
+            width: 100px;
+            transform: translateX(100px);
+        }
+    }
+    &.shown {
+        display: block;
+    }
+    &.opened {
+        &.is-top, &.is-bottom {
+            .drawer__container {
+                transform: translateY(0px) !important;
+            }
+        }
+        &.is-left, &.is-right {
+            .drawer__container {
+                transform: translateX(0px) !important;
+            }
+        }
+        .drawer__mask {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &.drawer__login, &.drawer__usermenu {
+        &.is-right {
+            .drawer__container {
+                top: 56px;
+                min-width: 390px;
+                min-height: 0%;
+                transform: translateX(390px);
+            }
+        }
+        &.opened {
+            &.is-right {
+                .drawer__container {
+                    top: 56px;
+                }
+            }
+        }
+    }
+
+    &.drawer__leftmenu {
+        &.is-left {
+            .drawer__container {
+                width: 290px;
+                transform: translateX(-290px);
+            }
+        }
+    }
+
+    &.drawer__config {
+        z-index: 998;
+        &.is-bottom {
+            .drawer__container {
+                background-color: #ececec;
+                min-height: 100%;
+                transform: translateY(100%);
+            }
+        }
+    }
+
+    &.drawer__message {
+        z-index: 999;
+        .drawer__container {
+            max-height: 100px;
+            min-height: 0px;
+            padding: 12px;
+            background: transparent;
+            transform: translateY(100px);
+            box-shadow: none;
+            .drawer__content {
+                color: white;
+                font-weight: bolder;
+                padding: 16px 24px;
+                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+                border-radius: 2px;
+                font-size: 14px;
+            }
+        }
+        &.is-bottom {
+            .drawer__container {
+                transform: translateY(100px);
+            }
+        }
+        &.is-top {
+            .drawer__container {
+                transform: translateY(-100px);
+            }
+        }
+        &.red {
+            .drawer__container {
+                .drawer__content {
+                    background-color: red;
+                }
+            }
+        }
+        &.blue {
+            .drawer__container {
+                .drawer__content {
+                    background-color: blue;
+                }
+            }
+        }
+    }
+}

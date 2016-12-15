@@ -1,0 +1,114 @@
+:host {
+    display: block;
+    position: relative;
+    transition: height 0.25s;
+    .input__container {
+        position: relative;
+        .input {
+            width: 100%;
+        }
+        .input__placeholder {
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+            left: 6px;
+            z-index: -1;
+            font-size: 18px;
+            transition: all 0.25s, width 0.25s;
+            transform-origin: left top;
+        }
+        .input__help {
+            position: absolute;
+            display: inline-block;
+            top: -2px;
+            right: -3px;
+            .icon-question {
+                font-size: 21px;
+            }
+        }
+    }
+    .input__error {
+        display: none;
+    }
+    
+    &.icon__label {
+        .input__label {
+            display: inline-block;
+            position: absolute;
+        }
+        .input__container {
+            padding-left: 30px;
+            .input__placeholder {
+                left: 38px;
+            }
+        }
+    }
+
+    &.has-label {
+        .input__label {
+            line-height: 24px;
+        }
+        .input__container {
+            display: inline-block;
+            border: none !important;
+            position: absolute;
+            right:0;
+        }
+    }
+
+    &.has-value {
+        .input__placeholder {
+            left: 0 !important;
+            transform: translateY(-100%) scale(0.7);
+            width: 133%;
+        }
+    }
+
+    &.focused {
+    }
+
+    &.changed {}
+
+    &.invalid {
+        .input__error {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        .input__container {
+            border-bottom-color: #bd081c !important;
+        }
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        cursor: auto;
+        opacity: .5;
+    }
+
+    // theme
+    &.input__login {
+        margin: 15px 0;
+        .input__container {
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            .input {
+                input {
+                    color: #ccc;
+                }
+            }
+            .input__placeholder {
+                color: #ccc;
+            }
+        }
+        &.focused {
+            .input__container {
+                border-bottom-width: 2px;
+            }
+        }
+    }
+}

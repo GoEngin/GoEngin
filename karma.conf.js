@@ -2,7 +2,11 @@
 // Generated on Wed Jul 15 2015 09:44:02 GMT+0200 (Romance Daylight Time)
 'use strict';
 
-module.exports = function(config) {
+var argv = require('yargs').argv;
+var minimatch = require("minimatch");
+
+
+module.exports = function (config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
@@ -16,41 +20,68 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'node_modules/zone.js/dist/zone-microtask.js',
-      'node_modules/zone.js/dist/long-stack-trace-zone.js',
-      'node_modules/zone.js/dist/jasmine-patch.js',
-      'node_modules/es6-module-loader/dist/es6-module-loader.js',
-      'node_modules/traceur/bin/traceur-runtime.js', // Required by PhantomJS2, otherwise it shouts ReferenceError: Can't find variable: require
-      'node_modules/traceur/bin/traceur.js',
-      'node_modules/systemjs/dist/system.src.js',
-      'node_modules/reflect-metadata/Reflect.js',
+      // Polyfills.
+      'node_modules/core-js/client/shim.min.js',
+      'node_modules/intl/dist/Intl.min.js',
 
-      { pattern: 'node_modules/angular2/**/*.js', included: false, watched: false },
+      'node_modules/traceur/bin/traceur.js',
+
+      // System.js for module loading
+      'node_modules/systemjs/dist/system.src.js',
+
+      // Zone.js dependencies
+      'node_modules/zone.js/dist/zone.js',
+      'node_modules/zone.js/dist/long-stack-trace-zone.js',
+      'node_modules/zone.js/dist/async-test.js',
+      'node_modules/zone.js/dist/fake-async-test.js',
+      'node_modules/zone.js/dist/sync-test.js',
+      'node_modules/zone.js/dist/proxy.js',
+      'node_modules/zone.js/dist/jasmine-patch.js',
+
+      // RxJs.
       { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
+      { pattern: 'node_modules/rxjs/**/*.js.map', included: false, watched: false },
+
+      // paths loaded via module imports
+      // Angular itself
+      { pattern: 'node_modules/@angular/**/*.js', included: false, watched: true },
+      { pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: false },
+
       { pattern: 'dist/dev/**/*.js', included: false, watched: true },
+      { pattern: 'dist/dev/**/*.html', included: false, watched: true, served: true },
+      { pattern: 'dist/dev/**/*.css', included: false, watched: true, served: true },
       { pattern: 'node_modules/systemjs/dist/system-polyfills.js', included: false, watched: false }, // PhantomJS2 (and possibly others) might require it
 
+      // suppress annoying 404 warnings for resources, images, etc.
+      { pattern: 'dist/dev/assets/**/*', watched: false, included: false, served: true },
+
+      //Firebase and AngularFire2
+      { pattern: 'node_modules/firebase/**/*.js', included: false, watched: false },
+      // { pattern: 'node_modules/angularfire2/bundles/angularfire2.umd.js', included: false, watched: false },
+
+      'test-config.js',
+      'dist/dev/app/system-config.js',
       'test-main.js'
     ],
 
+    // must go along with above, suppress annoying 404 warnings.
+    proxies: {
+      '/assets/': '/base/dist/dev/assets/'
+    },
 
     // list of files to exclude
     exclude: [
-      'node_modules/angular2/**/*spec.js'
+      'node_modules/**/*spec.js'
     ],
 
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: {
-      'dist/**/!(*spec).js': ['coverage']
-    },
-
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['mocha', 'coverage'],
+    reporters: ['mocha'],
 
 
     // web server port
@@ -73,7 +104,6 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
-      'PhantomJS',
       'Chrome'
     ],
 
@@ -85,18 +115,14 @@ module.exports = function(config) {
       }
     },
 
-    coverageReporter: {
-      dir: 'coverage/',
-      reporters: [
-        { type: 'text-summary' },
-        { type: 'json', subdir: '.', file: 'coverage-final.json' },
-        { type: 'html' }
-      ]
-    },
-
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false
+    singleRun: false,
+
+    // Passing command line arguments to tests
+    client: {
+      files:  argv.files ? minimatch.makeRe(argv.files).source : null
+    }
   });
 
   if (process.env.APPVEYOR) {
@@ -108,5 +134,6 @@ module.exports = function(config) {
   if (process.env.TRAVIS || process.env.CIRCLECI) {
     config.browsers = ['Chrome_travis_ci'];
     config.singleRun = true;
+    config.browserNoActivityTimeout = 90000;
   }
 };

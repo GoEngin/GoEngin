@@ -1,0 +1,27 @@
+:host {
+	display: block;
+	position: relative;
+	table {
+		width: 100%;
+		border: 0;
+		td {
+			text-align: left;
+			border: 0;
+			font-size: 14px;
+			height: 32px;
+			vertical-align: middle;
+			&.listitem__align__right {
+				text-align: right;
+			}
+			&.listitem__align__center {
+				text-align: center;
+			}
+		}
+	}
+	.list__header {
+	}
+	.list__items__header {
+		padding: 0 14px;
+		.list__items__header__table {}
+	}
+}

@@ -1,0 +1,6 @@
+<div *ngIf="placeHolderIcon" class="text__left">
+	<mc-icon [icon]="placeHolderIcon"></mc-icon>
+</div>
+<div class="text__center">
+	<input type="{{type}}" name="{{name}}" (keyup)="onKeyUp($event)" (focus)="onFocus($event)" (blur)="onBlur($event)" autocomplete="off" value="{{value}}" placeholder="{{placeHolderText}}">
+</div>

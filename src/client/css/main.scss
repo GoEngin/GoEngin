@@ -1,0 +1,118 @@
+//naming conventions by OOCSS
+// Objects(Modules, Components): .media
+// Child Objects: .media__img, .media__body
+// Modifiers: .media--inline, .media__img--right
+// States: .media.is-active
+
+//1st Principle. Separation of Structure from Skin: .btn {structure} .btn--primary {skin}
+//2nd Principle. Separation of Container from Content: 
+
+
+// CSS Resets & Default Styles, HTML only
+html {
+  box-sizing: border-box;
+  height: 100%;
+  body {
+    padding:0;
+    margin:0;
+    background: #f2f2f2;
+    color: #333;
+    height: 100%;
+    // font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*:focus {
+    outline: none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+mc-icon {
+  &.icon-bars:before {
+    content: "a";
+  }
+  &.icon-tile:before {
+    content: "b";
+  }
+  &.icon-list:before {
+    content: "c";
+  }
+  &.icon-thumbup0:before {
+    content: "d";
+  }
+  &.icon-thumbup1:before {
+    content: "e";
+  }
+  &.icon-thumbdown0:before {
+    content: "f";
+  }
+  &.icon-thumbdown1:before {
+    content: "g";
+  }
+  &.icon-star11:before {
+    content: "h";
+  }
+  &.icon-star10:before {
+    content: "i";
+  }
+  &.icon-star01:before {
+    content: "j";
+  }
+  &.icon-star00:before {
+    content: "k";
+  }
+  &.icon-person:before {
+    content: "l";
+  }
+  &.icon-logo:before {
+    content: "m";
+  }
+  &.icon-search:before {
+    content: "n";
+  }
+  &.icon-close:before {
+    content: "o";
+  }
+  &.icon-google {
+    background: url("../assets/images/google.png") center left no-repeat;
+    background-size: 24px;
+  }
+  &.icon-facebook {
+    background: url("../assets/images/facebook.png") center left no-repeat;
+    background-size: 24px;
+  }
+}
+
+/* from iPad landscape orientation */
+@media (min-width: 769px) {
+  mc-drawer {
+    z-index: 100 !important;
+    &.drawer__leftmenu {
+      z-index: 99 !important;
+      display: block !important;
+      min-width: 0px !important;
+      &.is-left {
+        .drawer__container {
+          transform: translateX(0px) !important;
+        }
+      }
+      .drawer__mask {
+        display: none !important;
+      }
+    }
+  }
+}
